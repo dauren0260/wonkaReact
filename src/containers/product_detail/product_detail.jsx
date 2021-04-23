@@ -33,10 +33,6 @@ class ProductDetail extends Component {
         return this.props.increment(1)
     }
     decrementCount = () =>{
-        const countNumber = this.props.countNumber;
-        if(countNumber<0){
-            this.setState({countNumber:0})
-        }
         return this.props.decrement(1)
     }
 

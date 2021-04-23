@@ -8,7 +8,10 @@ import {
     INCREMENT,
     DECREMENT,
     PAGE_TYPE,
-    SHOW_DETAIL
+    SHOW_DETAIL,
+    COURSE_DETAIL,
+    INCREMENT_COURSE,
+    DECREMENT_COURSE
 } from './action-type';
 
 export const getWidth = (widthData) => ({type: WIDTH, data:widthData})
@@ -21,4 +24,7 @@ export const increment = (data) =>({type:INCREMENT,data})
 export const decrement = (data) =>({type:DECREMENT,data})
 export const pageOn = (data) =>({type:PAGE_TYPE,data})
 export const showDetail = (data) =>({type:SHOW_DETAIL,data})
+export const courseDetail = (data) =>({type:COURSE_DETAIL,data})
+export const incrementCourse = (data) =>({type:INCREMENT_COURSE,data})
+export const decrementCourse = (data) =>({type:DECREMENT_COURSE,data})
 

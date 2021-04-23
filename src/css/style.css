@@ -86,6 +86,11 @@ body {
   border-radius: 3px;
 }
 
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 div.title {
   width: 70%;
   margin: 50px auto 0;
@@ -282,47 +287,47 @@ button.btn:hover {
   }
 }
 
-.class-info .class-detail {
+.class-detail {
   width: 400px;
   margin-top: 20px;
 }
 
 @media all and (max-width: 767px) {
-  .class-info .class-detail {
+  .class-detail {
     width: auto;
   }
 }
 
-.class-info .content {
+.content {
   display: inline-block;
   width: 180px;
   margin: 10px;
 }
 
 @media all and (max-width: 767px) {
-  .class-info .content {
+  .content {
     width: 150px;
     margin: 10px 0;
   }
 }
 
-.class-info .content svg {
+.content svg {
   font-size: 2.5rem;
   color: #cc8b76;
   vertical-align: middle;
 }
 
-.class-info .text {
+.text {
   display: inline-block;
   vertical-align: middle;
 }
 
-.class-info .text span {
+.text span {
   display: block;
   margin-left: 5px;
 }
 
-.class-info .text, .class-info .content img {
+.text, .content img {
   vertical-align: middle;
 }
 
@@ -2107,6 +2112,636 @@ footer h3 {
   }
 }
 
+.courseInfo {
+  /* quantity btn */
+  /* course intro article */
+  /* course access */
+}
+
+.courseInfo .course-heading {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.courseInfo .course-heading > p {
+  font-size: 24px;
+  margin: 20px 0;
+  margin-top: 7%;
+}
+
+.courseInfo .course-container {
+  width: 70%;
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.courseInfo .course-content {
+  width: 500px;
+  margin-right: 50px;
+}
+
+.courseInfo .course-content > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.courseInfo .class-detail {
+  margin: 30px 0;
+  width: 100%;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courseInfo .content {
+  width: 164px;
+  margin: 0;
+}
+
+.courseInfo .content > img {
+  width: 40px;
+}
+
+.courseInfo .book-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+
+.courseInfo .course-price {
+  font-size: 20px;
+  line-height: 43px;
+}
+
+.courseInfo .quantity-area > input {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 3px;
+  width: 23px;
+  border: none;
+}
+
+.courseInfo .quantity-area > input,
+.courseInfo .quantity-area > button {
+  vertical-align: middle;
+}
+
+.courseInfo .quantity-area {
+  display: inline-block;
+  margin-right: 50px;
+  border: 1px solid #212121;
+}
+
+.courseInfo button.quantity-btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  color: #681116;
+  height: 100%;
+}
+
+.courseInfo button.quantity-btn:focus {
+  outline: none;
+}
+
+.courseInfo button.btn.book {
+  display: inline-block;
+  margin: 0;
+}
+
+.courseInfo .course-intro {
+  margin-top: 50px;
+}
+
+.courseInfo .course-intro > p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.courseInfo .course-address {
+  /* min-width: 350px; */
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.courseInfo .course-access > div {
+  border: 1px solid #212121;
+  margin-bottom: 50px;
+}
+
+.courseInfo .course-address > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.courseInfo .course-quota {
+  padding: 20px 10px;
+}
+
+.courseInfo .course-quota > p {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.courseInfo .course-quota > p:first-child {
+  font-size: 22px;
+}
+
+.courseInfo .course-quota span {
+  font-size: 30px;
+  color: #681116;
+  padding: 0 10px;
+  -webkit-animation-name: shine;
+          animation-name: shine;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@media screen and (max-width: 1200px) {
+  .courseInfo .course-container {
+    display: block;
+  }
+  .courseInfo .course-content {
+    margin: 0 auto;
+  }
+  .courseInfo .course-access > div {
+    width: 350px;
+    margin: 50px auto 0;
+  }
+  .courseInfo .content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .courseInfo div.title {
+    margin: 50px auto 0;
+  }
+  .courseInfo .course-content {
+    width: 400px;
+  }
+  .courseInfo .class-detail {
+    height: auto;
+  }
+  .courseInfo .class-detail > .content > .text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .courseInfo .class-detail span {
+    width: auto;
+  }
+  .courseInfo .course-price {
+    font-size: 18px;
+  }
+  .courseInfo .book-info {
+    display: block;
+  }
+  .courseInfo .quantity-area {
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .courseInfo button.btn.book {
+    display: block;
+    margin-top: 30px;
+  }
+  .courseInfo .course-quota > p:first-child {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .courseInfo .course-heading {
+    width: 90%;
+    padding: 0;
+  }
+  .courseInfo .course-container {
+    width: 90%;
+  }
+  .courseInfo .course-content {
+    width: 100%;
+  }
+  .courseInfo .book-info {
+    padding-left: 20px;
+  }
+  .courseInfo .course-intro {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .courseInfo .course-access > div {
+    width: 90%;
+  }
+  .courseInfo iframe {
+    width: 100%;
+  }
+}
+
+.factoryTour {
+  /* tab */
+  /* opening time */
+  /* tickets */
+  /* access */
+  /* travel way */
+}
+
+.factoryTour .tab-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.factoryTour .tab-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.factoryTour table {
+  text-align: center;
+}
+
+.factoryTour th,
+.factoryTour td {
+  border: 1px solid #212121;
+  padding: 18px;
+  color: #212121;
+}
+
+@media all and (max-width: 577px) {
+  .factoryTour th,
+  .factoryTour td {
+    padding: 9px;
+  }
+}
+
+.factoryTour .note {
+  width: 460px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.factoryTour .note i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.factoryTour .note > p:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #ccc;
+  margin-right: 7px;
+}
+
+.factoryTour .note > p:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #423528;
+  margin-right: 7px;
+}
+
+.factoryTour .tickets-table {
+  margin: 30px auto;
+  width: 670px;
+}
+
+@media all and (max-width: 767px) {
+  .factoryTour .tickets-table {
+    width: auto;
+  }
+}
+
+.factoryTour .tickets-table > table th,
+.factoryTour td {
+  vertical-align: middle;
+}
+
+.factoryTour .tickets-table th {
+  color: #681116;
+  font-size: 18px;
+  background-color: #f7be6c;
+}
+
+.factoryTour .tickets-table span {
+  display: block;
+  color: #212121;
+  font-size: 16px;
+}
+
+.factoryTour .admission {
+  max-width: 1200px;
+  text-align: center;
+  margin: 50px auto 20px;
+}
+
+.factoryTour .admission i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.factoryTour .admission > p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.factoryTour .notice {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.factoryTour .notice > p,
+.factoryTour .notice li {
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.factoryTour .notice > ul {
+  padding-left: 20px;
+}
+
+.factoryTour .notice li {
+  list-style: square;
+}
+
+.factoryTour .address > p {
+  font-size: 20px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.factoryTour .address > p i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.factoryTour .address > p::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  margin-right: 7px;
+}
+
+.factoryTour .map {
+  text-align: center;
+}
+
+.factoryTour .access > .map > img {
+  width: 600px;
+}
+
+.factoryTour .travel-detail {
+  max-width: 800px;
+  margin: 50px auto;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 20px;
+}
+
+.factoryTour .detail-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #681116;
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.factoryTour .detail-title:hover {
+  cursor: pointer;
+}
+
+.factoryTour .detail-section {
+  display: none;
+}
+
+.factoryTour .detail-section.open {
+  display: block;
+}
+
+.factoryTour .more-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.factoryTour .more-detail > div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: auto;
+  padding: 3px;
+}
+
+.factoryTour .more-detail > .detail-content {
+  border: 1px solid #212121;
+  text-align: center;
+}
+
+.factoryTour .more-detail > .detail-content > p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 7px 0;
+}
+
+.factoryTour .more-detail > .detail-content:last-child {
+  background-color: #681116;
+}
+
+.factoryTour .more-detail > div.detail-content:last-child > p {
+  line-height: 47px;
+  color: #f1f1f1;
+}
+
+.factoryTour .travel-detail:last-child .more-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.factoryTour .travel-detail:last-child .more-detail > div {
+  width: auto;
+}
+
+.factoryTour .detail-process svg {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .factoryTour .tab-container {
+    width: 80%;
+  }
+  .factoryTour .tab-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .factoryTour {
+    /* access */
+  }
+  .factoryTour .tab-container {
+    width: 100%;
+  }
+  .factoryTour .more-detail > div {
+    width: 300px;
+  }
+  .factoryTour .more-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .factoryTour .detail-process {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .factoryTour .detail-process hr {
+    display: none;
+  }
+  .factoryTour .detail-process svg {
+    display: inline-block;
+    -webkit-transform: rotate(90deg) translateX(6px);
+            transform: rotate(90deg) translateX(6px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .factoryTour {
+    /* tickets  */
+    /* access */
+  }
+  .factoryTour .tab-title {
+    width: 80%;
+    margin: 50px auto 0;
+  }
+  .factoryTour .tab-title a {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  .factoryTour .notice {
+    width: auto;
+    padding: 20px;
+  }
+  .factoryTour button.btn {
+    margin-top: 0px;
+  }
+  .factoryTour iframe {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .factoryTour {
+    /* calendar */
+    /* access */
+  }
+  .factoryTour .tab-title {
+    width: 100%;
+  }
+  .factoryTour .cld-main {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .factoryTour .cld-number {
+    padding: 10px;
+  }
+  .factoryTour .note {
+    width: auto;
+  }
+  .factoryTour iframe {
+    width: 350px;
+    height: 250px;
+  }
+  .factoryTour .detail-process p {
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+  }
+}
+
 .glide {
   position: relative;
   width: 100%;
@@ -2291,6 +2926,16 @@ footer h3 {
 @media all and (max-width: 577px) {
   .glide__arrows {
     display: none;
+  }
+}
+
+.react-calendar {
+  margin: 0 auto;
+}
+
+@media all and (max-width: 577px) {
+  .react-calendar {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

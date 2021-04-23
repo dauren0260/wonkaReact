@@ -8,3 +8,6 @@ export const INCREMENT = 'increment';
 export const DECREMENT = 'decrement';
 export const PAGE_TYPE = 'pageType';
 export const SHOW_DETAIL = 'showDetail';
+export const COURSE_DETAIL = 'courseDetail';
+export const INCREMENT_COURSE = 'incrementCourse';
+export const DECREMENT_COURSE = 'decrementCourse';

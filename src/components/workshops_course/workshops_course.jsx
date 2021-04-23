@@ -5,9 +5,19 @@ import FaceIcon from '@material-ui/icons/Face';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import {
+    courseDetail
+} from '../../redux/actions'
+import { connect } from 'react-redux';
 
 
-export default class WorkshopsCourse extends Component {
+class WorkshopsCourse extends Component {
+    deliverPath = (key,name,hour,chef,location,price,month,date,src,quota,path,mapSrc) =>{
+        return () =>{
+            this.props.courseDetail({key,name,hour,chef,location,price,month,date,src,quota,path,mapSrc})
+        }
+    }
+
     render() {
         return (
             this.props.workshops.map((item)=>{
@@ -18,8 +28,8 @@ export default class WorkshopsCourse extends Component {
                             <p>{item.month}</p>
                         </div>
                         
-                        <Link to="/courseInfo">
-                            <img src={item.src} alt="lava cake" />
+                        <Link to={`/courseInfo/${item.path}`}>
+                            <img src={item.src} alt="lava cake" onClick={this.deliverPath(item.key,item.name,item.hour,item.chef,item.location,item.price,item.month,item.date,item.src,item.quota,item.path,item.mapSrc)}/>
                             <div className="class-info">
                                 <p>{item.name}</p>
                                 <p>It’s a pratical, fun workshop in a light and fun atmosphere.</p>
@@ -28,7 +38,7 @@ export default class WorkshopsCourse extends Component {
                                         <Icon component={AccessAlarmIcon}></Icon>
                                         <div className="text">
                                             <span>Hour</span>
-                                            <span>{item.startHour} - {item.endHour}</span>
+                                            <span>{item.hour}</span>
                                         </div>
                                     </div>
                                     <div className="content">
@@ -61,3 +71,12 @@ export default class WorkshopsCourse extends Component {
         )
     }
 }
+
+export default connect(
+    state =>({
+
+    }),
+    {
+        courseDetail
+    }
+)(WorkshopsCourse)

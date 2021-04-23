@@ -16,6 +16,11 @@ body {
     } 
 }
 
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 div.title {
     width: 70%;
     margin: 50px auto 0;
@@ -190,6 +195,7 @@ button.btn:hover {
             width: 280px;
         }
     }
+}
     .class-detail{
         width: 400px;
         margin-top: 20px;
@@ -231,7 +237,7 @@ button.btn:hover {
         vertical-align: middle;
     }
 
-}
+
 
 
 @media screen and (max-width: 768px) {

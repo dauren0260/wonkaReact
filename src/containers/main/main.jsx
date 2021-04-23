@@ -9,6 +9,7 @@ import NewArrivals from '../../components/main_newArrivals/main_newArrivals';
 import WorkshopsCourse from '../../components/workshops_course/workshops_course'
 import MainFactory from '../../components/main_factory/main_factory';
 
+
 import {
     pageOn
 } from '../../redux/actions'
@@ -37,26 +38,30 @@ class Main extends Component {
             {
                 key: "course1",
                 name:"Chocolate Addicted Workshop",
-                startHour: "13:00",
-                endHour: "16:00",
-                chef: "Ronan Appello",
-                location: "Yıldızların",
+                hour: "13:00 - 16:00",
+                chef: "Gizzy",
+                location: "Utopia",
                 price: "280",
                 month: "June",
                 date:"23",
-                src: courseJpg
+                src: courseJpg,
+                quota: 5,
+                path: "course1",
+                mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4807.588023881461!2d-1.1493653252387648!3d52.95212938627611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa0aded7035590e1b!2sChocolate%20Utopia!5e0!3m2!1szh-TW!2stw!4v1619131230185!5m2!1szh-TW!2stw',
             },
             {
                 key: "course2",
                 name:"The Art of Bean to Bar Workshop",
-                startHour: "14:00",
-                endHour: "17:00",
-                chef: "Ronan Appello",
-                location: "Ay gezegeni",
+                hour: "14:00 - 17:00",
+                chef: "Ronan",
+                location: "Hotel Chocolat",
                 price: "250",
                 month: "July",
                 date:"15",
-                src: courseJpg2
+                src: courseJpg2,
+                quota: 8,
+                path: "course2",
+                mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9615.1023091703!2d-1.1504472053079688!3d52.95246107328884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c3d52a5bfcd1%3A0x6b37eb5d5b3dc8ee!2sHotel%20Chocolat!5e0!3m2!1szh-TW!2stw!4v1619131172300!5m2!1szh-TW!2stw',
             },
         ]
     }

@@ -9,7 +9,10 @@ import {
     INCREMENT,
     DECREMENT,
     PAGE_TYPE,
-    SHOW_DETAIL
+    SHOW_DETAIL,
+    COURSE_DETAIL,
+    INCREMENT_COURSE,
+    DECREMENT_COURSE
 } from './action-type';
 
 let initWidth = 0;
@@ -119,6 +122,24 @@ function countReducer(preState=initCount, action){
     }
 }
 
+let initCourseCount = 1;
+function courseCountReducer(preState=initCourseCount, action){
+    let {type,data} = action;
+    switch (type) {
+        case INCREMENT_COURSE:
+            return preState + data
+
+        case DECREMENT_COURSE:
+            if( preState <= 0 ){
+                return preState = 0;
+            }else{
+                return preState-data
+            }
+        default:
+            return preState
+    }
+}
+
 let initPageOn = '';
 function pageOnReducer(preState=initPageOn, action){
     let {type,data} = action;
@@ -143,6 +164,18 @@ function showDetailReducer(preState=initDetail, action){
     }
 }
 
+let initcourseDetail = {};
+function courseDetailReducer(preState=initcourseDetail, action){
+    let {type,data} = action;
+    switch (type) {
+        case COURSE_DETAIL:            
+            return data
+    
+        default:
+            return preState
+    }
+}
+
 
 
 export default combineReducers({
@@ -153,6 +186,8 @@ export default combineReducers({
     expandChocoType,
     expandChocoSort,
     countReducer,
+    courseCountReducer,
     pageOnReducer,
-    showDetailReducer
+    showDetailReducer,
+    courseDetailReducer
 })
